@@ -2,8 +2,7 @@ import * as React from 'react';
 import { View, Text, Image, StyleSheet, Button } from 'react-native';
 
 const WelcomeScreen = ({ navigation }) => {
-    // Add welcome screen code here.
-    return <View>
+    return <View style={{ flex: 1 }}>
         <View style={styles.logoContainer}>
             <Image style={styles.littleLemonLogo} source={require('../assets/little-lemon-logo.png')} />
         </View>
@@ -11,7 +10,7 @@ const WelcomeScreen = ({ navigation }) => {
         <View style={styles.emailButton}>
             <Button
                 onPress={() => navigation.navigate('Subscribe')}
-                color='white'
+                color='#495e57'
                 title='Newsletter'>
             </Button>
         </View>
@@ -37,9 +36,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     emailButton: {
-        backgroundColor: '#495e57',
-        color: 'white',
-        borderRadius: 10,
+        borderRadius: 20,
         marginTop: 250,
         marginLeft: 30,
         marginRight: 30,

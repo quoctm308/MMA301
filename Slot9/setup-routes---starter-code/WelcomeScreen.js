@@ -1,6 +1,7 @@
 import { ScrollView, View, Text, StyleSheet, Image } from 'react-native';
 
 export default function WelcomeScreen() {
+
   return (
     <ScrollView style={styles.container}>
       <View style={styles.headerWrapper}>
@@ -26,7 +27,7 @@ export default function WelcomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#333333',
+    backgroundColor: "#333333"
   },
   headerWrapper: {
     flexDirection: 'row',
@@ -55,3 +56,5 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
 });
+
+

@@ -6,10 +6,16 @@ import {
   TextInput,
   Pressable,
 } from 'react-native';
+import { StackActions } from '@react-navigation/native';
+
 
 export default function LoginScreen({ navigation }) {
   const [email, onChangeEmail] = useState('');
   const [password, onChangePassword] = useState('');
+
+  const handleLogin = () => {
+    navigation.dispatch(StackActions.replace('Welcome'));
+  }
 
   return (
     <ScrollView style={styles.container}>
@@ -30,9 +36,7 @@ export default function LoginScreen({ navigation }) {
         keyboardType={'default'}
         secureTextEntry={true}
       />
-      <Pressable
-        onPress={() => navigation.navigate('Welcome')}
-        style={styles.button}>
+      <Pressable onPress={handleLogin} style={styles.button}>
         <Text style={styles.buttonText}>Log in</Text>
       </Pressable>
     </ScrollView>

@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#EE9972',
   },
   headerText: {
-    padding: 30,
+    padding: 40,
     fontSize: 30,
     color: 'black',
     textAlign: 'center',
