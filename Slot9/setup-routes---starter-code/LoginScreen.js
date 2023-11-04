@@ -6,15 +6,13 @@ import {
   TextInput,
   Pressable,
 } from 'react-native';
-import { StackActions } from '@react-navigation/native';
-
 
 export default function LoginScreen({ navigation }) {
   const [email, onChangeEmail] = useState('');
   const [password, onChangePassword] = useState('');
 
   const handleLogin = () => {
-    navigation.dispatch(StackActions.replace('Welcome'));
+    navigation.navigate('Welcome');
   }
 
   return (
