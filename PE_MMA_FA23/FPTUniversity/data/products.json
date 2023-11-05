@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "iPhone 12",
+        "brand": "Apple",
+        "price": 999
+    },
+    {
+        "id": "2",
+        "name": "Galaxy S21",
+        "brand": "Samsung",
+        "price": 899
+    },
+    {
+        "id": "3",
+        "name": "Pixel 5",
+        "brand": "Google",
+        "price": 699
+    },
+    {
+        "id": "4",
+        "name": "Pixel 4",
+        "brand": "Google",
+        "price": 412
+    }
+]
